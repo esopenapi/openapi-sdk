@@ -16,7 +16,7 @@
 *1.	**通过git下载sdk**。
 
 ```
-git clone git@git.xiaojukeji.com:zhangqiantina/openapi-sdk.git
+git clone git@github.com:esopenapi/openapi-sdk.git
 ```
 *2.	**引入autoloader.php文件**。
 
