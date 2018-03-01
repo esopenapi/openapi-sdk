@@ -143,7 +143,7 @@ try {
 try{
     $response = $openapi->AuthAuthorize(array(
         'grant_type' => 'client_credentials',
-        'phone' => '11000000999',
+        'phone' => '130********',
     ));
 } catch (\Es\EsException $e) {
     echo $e->getMessage();
