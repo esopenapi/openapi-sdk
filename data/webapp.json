@@ -1,0 +1,33 @@
+{
+  "metadata":{
+    "endpoint":"https://api.es.xiaojukeji.com/webapp/"
+  },
+  "operations":{
+    "TicketFetch":{
+      "name":"TicketFetch",
+      "nameZh":"一次性Ticket申请",
+      "doc":"",
+      "http":{
+        "method":"POST",
+        "requestUri":"ticket/fetch"
+      }
+    },
+    "CitiesGetAll":{
+      "name":"CitiesGetAll",
+      "nameZh":"获取滴滴服务城市列表",
+      "doc":"",
+      "http":{
+        "method":"GET",
+        "requestUri":"cities/getAll"
+      }
+    }
+  },
+  "validations":{
+    "TicketFetch":{
+      "required":[
+        "passenger_phone",
+        "master_phone"
+      ]
+    }
+  }
+}

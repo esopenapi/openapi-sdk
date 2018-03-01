@@ -1,0 +1,18 @@
+{
+  "metadata":{
+    "endpoint":"https://api.es.xiaojukeji.com/openauth/"
+  },
+  "operations":{
+    "ServiceGetToken":{
+      "name":"ServiceGetToken",
+      "nameZh":"企业开放授权-获取授权token",
+      "doc":"http://open.es.xiaojukeji.com/doc/erpapi/openAuth/getToken.html",
+      "http":{
+        "method":"POST",
+        "requestUri":"Service/getToken"
+      }
+    }
+  },
+  "validations":{
+  }
+}
