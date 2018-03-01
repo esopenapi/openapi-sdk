@@ -1,7 +1,8 @@
-#滴滴企业版SDK（PHP版）
+# 滴滴企业版SDK（PHP版）
+
 **滴滴企业版SDK**提供了PHP接入滴滴企业版open API的工具包。
 
-##相关资源
+## 相关资源
 * [滴滴企业版][es]
 * [开放平台][open-es]
 * 接口文档：
@@ -10,8 +11,8 @@
 * [问答社区][es-forum]
 
 
-##快速入门
-###1 安装
+## 快速入门
+### 1 安装
 
 *1.	**通过git下载sdk**。
 
@@ -25,7 +26,7 @@ git clone git@github.com:esopenapi/openapi-sdk.git
 require 'path/to/autoloader.php';
 ```
 
-###2 一个完整的Demo
+### 2 一个完整的Demo
 **一个完整的用车api价格预估demo**
 
 ```
@@ -68,8 +69,8 @@ $result = $response->getResult();
 
 > 正式环境使用时，要**缓存access_token，做异常处理和错误判断**等。
 
-##使用说明
-###1 Create a Client
+## 使用说明
+### 1 Create a Client
 
 用车api **OpenapiClient**
 
@@ -118,7 +119,7 @@ $webapp = new Es\WebappClient(array(
 
 
 
-###2 请求示例
+### 2 请求示例
 **Webapp获取一次性发单ticket**
 
 ```
@@ -150,7 +151,7 @@ try{
 }
 ```
 
-###3 处理结果
+### 3 处理结果
 **获取状态码**
 
 ```
@@ -184,7 +185,7 @@ $response->getRaw();
 > getResult和getRaw的区别是：
 > getRaw获得的是调用api接口请求的原始结果， getResult获得的是对原始结果经过json_decode等一系列处理以后的结果。
 
-###4 异常处理
+### 4 异常处理
 
 **检查是否是连接错误**
 
@@ -207,7 +208,7 @@ $exception->getResponse();
 
 ```
 
-###5 查看所有操作
+### 5 查看所有操作
 **通过下面的命令查看这个client支持的接口**
 
 ```
@@ -231,8 +232,8 @@ $openapi->help();
 ```
 
 
-##FAQ
-#####Q ： WebApp使用时有异常Call to undefined function Es\mcrypt_module_open()
+## FAQ
+##### Q ： WebApp使用时有异常Call to undefined function Es\mcrypt_module_open()
 PHP安装mcrypt扩展。[安装方法点击][mcrypt-setup]
 
 [es]:https://es.xiaojukeji.com/
@@ -241,4 +242,5 @@ PHP安装mcrypt扩展。[安装方法点击][mcrypt-setup]
 [erpapi-doc]:http://open.es.xiaojukeji.com/doc/erpapi/index.html
 [es-forum]:http://qa.es.xiaojukeji.com/index.php?qa=questions
 [mcrypt-setup]:http://php.net/manual/zh/mcrypt.setup.php
+
 
